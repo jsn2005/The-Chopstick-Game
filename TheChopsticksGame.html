@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chopsticks – Side-by-Side Ramen Bowls</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <h1 class="game-title">Chopsticks</h1>
+    <h2 class="game-sub-title">by Joshua Ngiamiarto</h2>
+
+    <main class="arena" aria-label="Chopsticks Game Board">
+        <!-- Player 1 -->
+        <section class="player player-left" aria-label="Player 1">
+            <h2 class="player-title">P1</h2>
+            <div class="bowl">
+                <img class="bowl-img" src="images/ramen-bowl.png" alt="Player 1 ramen bowl" />
+
+                <!-- Left Hand -->
+                <div class="hand hand-top" data-player="1" data-hand="top">
+                    <div class="hand-value">
+                        <img id="p1-top" src="images/1.png" class="hand-img">
+                    </div>
+                    <button class="btn attack" data-hand="top">Attack</button>
+                    <button class="btn target" data-hand="top">Target</button>
+                    <button class="btn split" data-hand="top">Split</button>
+                </div>
+
+                <!-- Right Hand -->
+                <div class="hand hand-bottom" data-player="1" data-hand="bottom">
+                    <div class="hand-value">
+                        <img id="p1-bottom" src="images/1.png" class="hand-img">
+                    </div>
+                    <button class="btn attack" data-hand="bottom">Attack</button>
+                    <button class="btn target" data-hand="bottom">Target</button>
+                    <button class="btn split" data-hand="bottom">Split</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Player 2 -->
+        <section class="player player-right" aria-label="Player 2">
+            <h2 class="player-title">P2</h2>
+            <div class="bowl">
+                <img class="bowl-img" src="images/ramen-bowl.png" alt="Player 2 ramen bowl" />
+
+                <!-- Left Hand -->
+                <div class="hand hand-top" data-player="2" data-hand="top">
+                    <div class="hand-value">
+                        <img id="p2-top" src="images/1.png" class="hand-img">
+                    </div>
+                    <button class="btn attack" data-hand="top">Attack</button>
+                    <button class="btn target" data-hand="top">Target</button>
+                    <button class="btn split" data-hand="top">Split</button>
+                </div>
+
+                <!-- Right Hand -->
+                <div class="hand hand-bottom" data-player="2" data-hand="bottom">
+                    <div class="hand-value">
+                        <img id="p2-bottom" src="images/1.png" class="hand-img">
+                    </div>
+                    <button class="btn attack" data-hand="bottom">Attack</button>
+                    <button class="btn target" data-hand="bottom">Target</button>
+                    <button class="btn split" data-hand="bottom">Split</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="reset-btn">
+        <button>Reset</button>
+    </div>
+
+    <!-- Status Box Container -->
+    <div class="status-container">
+        <div class="status-box" id="statusBox">
+            Welcome to Chopsticks. Player 1 starts.
+        </div>
+    </div>
+
+    <div id="split-options"></div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
