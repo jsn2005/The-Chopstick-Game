@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap');
+
+body {
+    margin: 0;
+    background: #f7efe2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 2.8rem;
+    color: #8b0000;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-sub-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1rem;
+    color: #8b0000;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.arena {
+    display: flex;
+    gap: 40px;
+}
+
+.player-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.8rem;
+    color: #8b0000;
+    text-align: center;
+    margin-bottom: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.player {
+    position: relative;
+}
+
+.bowl {
+    position: relative;
+    width: 300px;
+}
+
+.bowl-img {
+    width: 100%;
+    display: block;
+}
+
+.hand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.hand-top {
+    top: 20%;
+}
+
+.hand-bottom {
+    top: 65%;
+}
+
+.hand-value {
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.btn {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.status-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.status-box {
+    width: 80%;
+    max-width: 700px;
+    background: #fff8e7;
+    border: 2px solid #8b0000;
+    border-radius: 12px;
+    padding: 20px;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn.target {
+    display: none;
+}
+
+.hand-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    /* adjust to your image size */
+    height: 40px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.hand-img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+#split-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#split-options button {
+    background: #fff3cd;
+    border: 2px solid #8b0000;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-weight: bold;
+    font-family: 'Noto Serif JP', serif;
+    color: #8b0000;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+#split-options button:hover {
+    background: #ffe08a;
+    transform: scale(1.05);
+}
+
+#reset-btn {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#reset-btn button {
+    background: #fff3cd;
+    border: 2px solid #8b0000;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-weight: bold;
+    font-family: 'Noto Serif JP', serif;
+    color: #8b0000;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+#reset-btn button:hover {
+    background: #ffe08a;
+    transform: scale(1.05);
+}
